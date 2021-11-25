@@ -4,7 +4,6 @@ resource "vault_namespace" "default" {
 
 provider "vault" {
   alias     = "default"
-  address   = "https://use2.vault.sst.sophosapps.com"
   namespace = trimsuffix(vault_namespace.default.id, "/")
 }
 
