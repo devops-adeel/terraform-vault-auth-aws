@@ -1,9 +1,0 @@
-name: Integration Tests
-title: Testing Github Repo
-maintainer: Tom Sage
-copyright: Tom Sage
-license: Apache-2.0
-summary: An InSpec Compliance Profile
-version: 0.1.0
-supports:
-  platform: os
