@@ -22,7 +22,9 @@ module "vault_aws_auth" {
 
 ## Inputs
 
-No inputs.
+| Name | Description | Type | Default | Required |
+|------|-------------|------|---------|:--------:|
+| <a name="input_policies"></a> [policies](#input\_policies) | List of Vault policies that auth-role should attach to | `list(any)` | n/a | yes |
 
 ## Outputs
 
