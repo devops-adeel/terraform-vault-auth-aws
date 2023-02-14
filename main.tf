@@ -1,5 +1,6 @@
 locals {
-  name = "vault-aws-auth-user"
+  name     = "vault-aws-auth-user"
+  policies = concat(["default"], var.policies)
 }
 
 data "aws_billing_service_account" "default" {}
@@ -78,8 +79,8 @@ resource "vault_generic_endpoint" "rotate_root" {
 resource "vault_aws_auth_backend_role" "default" {
   backend              = vault_auth_backend.default.path
   role                 = local.name
-  bound_account_ids    = [aws_billing_service_account.default.id]
-  token_policies       = ["default"]
+  token_policies       = local.policies
+  bound_account_ids    = [data.aws_billing_service_account.default.id]
   auth_type            = "ec2"
   inferred_entity_type = "ec2_instance"
   token_ttl            = 60
