@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.0](https://www.github.com/devops-adeel/terraform-vault-auth-aws/compare/v0.1.0...v0.2.0) (2023-02-14)
+
+
+### Features
+
+* updated module to expect input ([1d04746](https://www.github.com/devops-adeel/terraform-vault-auth-aws/commit/1d04746a7a7e84dfc42159ba5498091346da1d55))
+
 ## 0.1.0 (2023-02-14)
 
 
