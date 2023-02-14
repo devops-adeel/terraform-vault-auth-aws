@@ -1,3 +1,4 @@
+<!-- BEGIN_TF_DOCS -->
 
 
 ```hcl
@@ -40,3 +41,6 @@ No outputs.
 | [vault_generic_endpoint.rotate_root](https://registry.terraform.io/providers/hashicorp/vault/3.12.0/docs/resources/generic_endpoint) | resource |
 | [aws_billing_service_account.default](https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/billing_service_account) | data source |
 | [aws_iam_policy_document.default](https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs/data-sources/iam_policy_document) | data source |
+
+
+<!-- END_TF_DOCS -->
